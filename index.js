@@ -12,6 +12,7 @@ window.addEventListener("load", () => {
   //   kbd.innerText = k.keyCode;
   //   container.appendChild(kbd);
   // })
+  // elements scraped from - https://www.w3.org/TR/2012/WD-html-markup-20121025/elements.html
   fetch("elements.json").then((r) => r.json()).then((d) => {
     Array.from(d).forEach((elem) => {
       const el = document.createElement(elem);
